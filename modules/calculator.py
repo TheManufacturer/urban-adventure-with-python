@@ -18,6 +18,8 @@ def division(x, y):
 
 
 def main():
+    number1 = 0
+    number2 = 0
     print("Select an operator : ")
     print("1. Sum")
     print("2. Subtraction")
