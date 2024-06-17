@@ -35,6 +35,8 @@ def main_data_structures():
         elif choose == 0:
             close_program = True
 
+        #Todo Mancano i mini esercizi 4-5-6
+
 
 if __name__ == "__main__":
     main_data_structures()
