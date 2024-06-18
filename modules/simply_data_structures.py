@@ -1,6 +1,15 @@
 # Define a tuple with subject names
 subjects = ("English", "Physics", "Geography", "Mathematics")
 
+shopping_list = [
+    "milk", "bread", "eggs", "cheese", "apples", "bananas", "chicken", "rice",
+    "pasta", "tomatoes", "carrots", "potatoes", "yogurt", "butter", "orange juice",
+    "lettuce", "onions", "garlic", "peppers", "cereal", "coffee", "tea", "sugar",
+    "flour", "olive oil", "salt", "pepper", "spinach", "cucumbers", "mushrooms",
+    "bacon", "ham", "sausages", "fish", "shrimp", "bread rolls", "chocolate",
+    "ice cream", "cookies", "toilet paper", "paper towels", "dish soap", "laundry detergent"
+]
+
 
 def exercise_tuple_simply():
     print("In this method we have le max length of element in tupla")
@@ -27,6 +36,8 @@ def exercise_tuple_index():
     for index, value in enumerate(subjects):
         print(f"Element : {value}, position n° {index} ")
 
+# ToDo Exercise Simply Dictionary :)
+
 
 def exercise_dictionary_simply():
     pass
@@ -42,6 +53,13 @@ if __name__ == "__main__":
     simply_data_exercise()
 
 '''
+---Esercizio con le liste
+
+    -Continue e Break (creare un esercizio) esempio:
+        - Se presente un cibo in particolare o altro usare "break" in un <def> e "continue"
+            in un altro così da capire la differenza --> Nella stampa includiamo anche *len()*
+
+
 --- Esercizio sulle Tuple: (Accesso ed Informazioni)
 
 - Descrizione: 
