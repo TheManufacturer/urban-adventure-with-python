@@ -2,7 +2,7 @@ import re
 
 list_of_emails = [
     # Email valide
-    'john.doe@example.com',
+    'johndoe@example.com',
     'alice_smith123@email.co.uk',
     'info@company.net',
     'jane_doe-123@example.com',
