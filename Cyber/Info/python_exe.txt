@@ -1,0 +1,53 @@
+Se sei qui vuol dire che :
+    -non hai nient'altro di meglio da fare che far partire i semplici .py in questa sezione...
+    -non riesci a far partire i "semplici" .py in questa sezione...
+
+molto bene...
+
+Parliamone in poche righe... venv [:)]
+
+venv --> Modulo usato per creare e gestire Virtual Environment
+
+-----
+Quindi, abbiamo la nostra cartella con i vari progetti...
+
+- Ci dirigiamo nella stessa e ci prepariamo ad installare venv.
+
+    sudo dnf install python3-venv
+
+probabilmente è già installato, nel caso sempre nella directory che ci interessa:
+
+    python3 -m venv venv
+
+questo command creerà il nostro Virtual Environment venv nella directory interessata.
+
+- Possiamo ora "Attivarlo" tramite:
+
+    source venv/bin/activate
+
+- Qui installeremo tramite "pip" la libreria che useremo [l'utilità di venv e che non intaccheremo il nostro "Python Globale"]
+
+    pip install scapy
+
+[eventualmente il sistema ci dirà se sono possibili aggiornamenti di pip, eseguiamoli nel caso -facoltativo
+    pip install --upgrade pip]
+
+
+- Possiamo notare nel nostro terminale che prima del nome del nostro dispositivo sarà apparso (venv), questo ci fà intuire che lo stesso è attivo...
+
+- Ulteriore conferma l'avremo eseguendo:
+
+    python -c "from scapy.all import ARP, Ether; print('Scapy installato correttamente\!')"
+
+    se positivo ci restituirà:
+
+    Scapy installato correttamente
+---------------
+
+Ricordiamoci ovviamente che per eseguire questo tipo di .py
+useremo:
+
+es:
+
+    sudo $(which python) Basic_Network_Scanner.py
+
